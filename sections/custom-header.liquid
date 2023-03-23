@@ -100,31 +100,26 @@
   </nav>
 </header>
 <script>
-  delimiters: ['${', '}'],
-
-    const cartCount = 0;
-    return {
-      cartCount,
-    };
-    document.addEventListener('click', this.showSearchResults);
-
-    const options = {
-      method: 'GET',
-    };
-    fetch('/cart.js', options)
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error(response.status);
-        }
-      })
-      .then((data) => {
-        this.cartCount = data.item_count;
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+  let cartCount = 0;
+  const cartCounter = document.querySelector('#cart-counter');
+  const options = {
+    method: 'GET',
+  };
+  fetch('/cart.js', options)
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error(response.status);
+      }
+    })
+    .then((data) => {
+      cartCount = data.item_count;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  cartCounter.innerText = cartCount;
 </script>
 <script>
   document.addEventListener('DOMContentLoaded', nav);
