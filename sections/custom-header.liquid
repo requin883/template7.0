@@ -82,13 +82,7 @@
         href="{{ routes.cart_url }}"
         class="border-none inline-block pointer relative underline rounded-full bg-[#f8f8f8] md:h-[32px] md:w-[32px]"
       >
-        {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
-          endif
-        -%}
+        {%- render 'icon-cart' -%}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         <div class="absolute bg-primary cart-count-bubble flex h-[1.7rem] items-center justify-center leading-none left-[1rem] rounded-full text-[.9rem] text-[#f8f8f8] w-[1.7rem]">
           {%- if cart.item_count < 100 -%}
