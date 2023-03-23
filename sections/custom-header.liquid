@@ -1,5 +1,8 @@
 <header class="bg-primary h-20 flex items-center w-full z-[9999] md:px-[60px] lg:pr-[24px]" id="header">
   <nav class="justify-between container flex  md:w-full mx-auto w-11/12 main-nav items-center xl:max-w-[1200px]">
+    <div class="burger">
+      {% render 'burger-icon' %}
+    </div>
     <div>
       <a href="{{ routes.root_url }}" class=" h-11">
         {%- if section.settings.logo != blank -%}
@@ -71,9 +74,6 @@
             </li>
           {% endfor %}
         </ul>
-      </div>
-      <div class="burger">
-        {% render 'burger-icon' %}
       </div>
       <a href="#" class="md:mr-4 hidden md:block">
         {% render 'icon-user' %}
