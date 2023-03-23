@@ -27,7 +27,7 @@
         "name": "",
         "logo": "shopify:\/\/shop_images\/logo_glasses.png",
         "logo_width": 100,
-        "menu_links": "navbar-menu"
+        "menu_links": "header_new_menu"
       }
     }
   },
