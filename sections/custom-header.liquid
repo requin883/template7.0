@@ -72,7 +72,10 @@
           {% endfor %}
         </ul>
       </div>
-      <a href="#" class="md:mr-4">
+      <div class="burger">
+        {% render 'burger-icon' %}
+      </div>
+      <a href="#" class="md:mr-4 hidden md:block">
         {% render 'icon-user' %}
       </a>
       <a
@@ -93,9 +96,6 @@
           {%- endif -%}
         </div>
       </a>
-      <div class="burger">
-        {% render 'burger-icon' %}
-      </div>
     </div>
   </nav>
 </header>
