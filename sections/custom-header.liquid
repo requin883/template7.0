@@ -84,7 +84,7 @@
       >
         {%- render 'icon-cart' -%}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        <div class="absolute bg-primary cart-count-bubble flex h-[1.7rem] items-center justify-center leading-none left-[1rem] rounded-full text-[.9rem] text-[#f8f8f8] w-[1.7rem]">
+        <div class="absolute bg-primary left-[15px] top-[-8px] cart-count-bubble flex h-[1.7rem] items-center justify-center leading-none left-[1rem] rounded-full text-[.9rem] text-[#f8f8f8] w-[1.7rem]">
           {%- if cart.item_count < 100 -%}
             <span aria-hidden="true" id="cart-counter">${ cartCount }</span>
           {%- endif -%}
