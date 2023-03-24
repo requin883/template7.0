@@ -29,7 +29,7 @@
           {% render 'close-icon' %}
         </div>
         <ul class="flex gap-14 flex-col md:mr-12 md:flex-row px-10 md:px-0 md:pt-0">
-          {% for link in menu_links %}
+          {% for link in section.settings.menu_links %}
             <li class="group md:flex md:items-center">
               <a
                 href="{{ link.url }}"
