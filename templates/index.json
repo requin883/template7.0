@@ -3,6 +3,7 @@
     "hero-section": {
       "type": "hero-section",
       "settings": {
+        "hero_title": "Ray Ban",
         "col_product_list": [
           "test",
           "test2",
