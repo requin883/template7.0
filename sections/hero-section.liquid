@@ -1,9 +1,14 @@
-<div class="hero-section grid place-items-center swiper">
-  <div class="swiper-wrapper grid place-items-center grid-flow-col text-center">
-    {% render 'product-card' for section.settings.col_product_list as product, swiper: 'swiper-slide' %}
+<div class="hero-section">
+  <div>
+    <p class="hero-title text-center mx-auto">{{ section.settings.hero_title }}</p>
   </div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <div class=" grid place-items-center swiper">
+    <div class="swiper-wrapper grid place-items-center grid-flow-col text-center">
+      {% render 'product-card' for section.settings.col_product_list as product, swiper: 'swiper-slide' %}
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </div>
 <script>
   const swiper = new Swiper('.swiper', {
@@ -30,6 +35,11 @@
   "name": "t:sections.collage.name",
   "tag": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Input title"
+    },
     {
       "type": "product_list",
       "id": "col_product_list",
