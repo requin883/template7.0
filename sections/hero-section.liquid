@@ -10,10 +10,19 @@
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      680: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
     },
   });
 </script>
