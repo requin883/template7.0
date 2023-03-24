@@ -1,4 +1,4 @@
-<div class="hero-section swiper">
+<div class="hero-section grid place-items-center swiper">
   <div class="swiper-wrapper grid place-items-center grid-flow-col text-center">
     {% render 'product-card' for section.settings.col_product_list as product, swiper: 'swiper-slide' %}
   </div>
@@ -18,7 +18,6 @@
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      // when window width is >= 320px
       680: {
         slidesPerView: 3,
         spaceBetween: 20,
