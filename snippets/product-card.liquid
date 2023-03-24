@@ -1,4 +1,4 @@
 <div class="mx-auto {{swiper}}">
   <p>{{ product.title }}</p>
-  <img src="{{ image.src | product_img_url: 'medium' }}" alt="">
+  <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="">
 </div>
