@@ -28,20 +28,20 @@
             "article_desc_text": "$44.00"
           }
         },
-        "b74c3b6a-27d1-4fa3-9379-a9db2986ebb8": {
-          "type": "product_grid",
-          "settings": {
-            "article_title": "Square sunglasses",
-            "article_bg_img": "shopify:\/\/shop_images\/square_sunglasses.png",
-            "article_desc_text": "$59.00"
-          }
-        },
         "fb785593-8328-44de-833e-b7df00b049d6": {
           "type": "product_grid",
           "settings": {
             "article_title": "Round flower glasses",
             "article_bg_img": "shopify:\/\/shop_images\/round_flower_glasses.png",
             "article_desc_text": "$24.00"
+          }
+        },
+        "b74c3b6a-27d1-4fa3-9379-a9db2986ebb8": {
+          "type": "product_grid",
+          "settings": {
+            "article_title": "Square sunglasses",
+            "article_bg_img": "shopify:\/\/shop_images\/square_sunglasses.png",
+            "article_desc_text": "$59.00"
           }
         },
         "b3df8049-163e-4eed-bb5d-cbe1f68f7384": {
@@ -55,8 +55,8 @@
       },
       "block_order": [
         "5669a8ad-7c5b-47f9-90ab-856f4c92ca13",
-        "b74c3b6a-27d1-4fa3-9379-a9db2986ebb8",
         "fb785593-8328-44de-833e-b7df00b049d6",
+        "b74c3b6a-27d1-4fa3-9379-a9db2986ebb8",
         "b3df8049-163e-4eed-bb5d-cbe1f68f7384"
       ],
       "settings": {
