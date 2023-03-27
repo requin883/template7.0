@@ -2,7 +2,7 @@
   <p class="pt-[55%] text-[#F8F8F8] josefin subtitle">{{ section.settings.main_article_text }}</p>
 </div>
 <div>
-  {% for block in blocks %}
+  {% for block in section.blocks %}
     <div class="bg-[url('{{block.settings.article_bg_img}}')]">
       <p>{{ block.settings.article_title }}</p>
       <p>{{ block.settings.article_desc_text }}</p>
