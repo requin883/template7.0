@@ -1,45 +1,9 @@
-<div class="w-full main-article">
-  <div class="bg-[url('{{section.settings.main_bg_img}}')]">
-    <p>{{ section.settings.main_article_text }}</p>
+<section class="main-article">
+  <div>
+    
   </div>
   <div>
     {% for block in blocks %}
-    {% endfor %}
+      {% endfor %}
   </div>
-</div>
-
-{% schema %}
-{
-  "name": "main-section",
-  "setting": [
-    {
-      "type": "image_picker",
-      "id": "main_bg_img",
-      "label": "Choose a background image"
-    },
-    {
-      "type": "text",
-      "id": "main_article_text",
-      "label": "Input main text"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "product_grid",
-      "type": "product_grid",
-      "settings": [
-        {
-          "type": "text",
-          "id": "main_article_title",
-          "label": "Input main article Title"
-        },
-        {
-          "type": "image_picker",
-          "id": "article_bg_img",
-          "label": "Insert the background image"
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
+</section>
