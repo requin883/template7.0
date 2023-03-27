@@ -4,6 +4,10 @@
   </div>
   <div>
     {% for block in blocks %}
+      <div class="bg-[url('{{block.settings.article_bg_img}}')]">
+        <p>{{ block.settings.article_title }}</p>
+        <p>{{ block.settings.article_desc_text }}</p>
+      </div>
     {% endfor %}
   </div>
 </div>
@@ -11,6 +15,7 @@
 {% schema %}
 {
   "name": "main-section",
+  "max-blocks": 10,
   "setting": [
     {
       "type": "image_picker",
@@ -30,13 +35,18 @@
       "settings": [
         {
           "type": "text",
-          "id": "main_article_title",
+          "id": "article_title",
           "label": "Input main article Title"
         },
         {
           "type": "image_picker",
           "id": "article_bg_img",
           "label": "Insert the background image"
+        },
+        {
+          "type": "text",
+          "id": "article_desc_text",
+          "label": "Insert price or description of your product"
         }
       ]
     }
