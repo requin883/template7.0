@@ -3,7 +3,7 @@
 </div>
 <div>
   {% for block in section.blocks %}
-    <div class="bg-[url('{{block.settings.article_bg_img | img_url: ''}}')] josefin text-[#F8F8F8] text-center pt-[65%] txt2 h-[180px]">
+    <div class="bg-[url('{{block.settings.article_bg_img | img_url: ''}}')] bg-no-repeat bg-cover josefin text-[#F8F8F8] text-center pt-[65%] txt2 h-[180px]">
       <p>{{ block.settings.article_title }}</p>
       <p>{{ block.settings.article_desc_text }}</p>
     </div>
