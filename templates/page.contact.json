@@ -19,7 +19,8 @@
     },
     "custom-slideshow": {
       "type": "custom-slideshow",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
