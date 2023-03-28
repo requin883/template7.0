@@ -38,12 +38,21 @@
             "article_bg_img": "shopify:\/\/shop_images\/round_flower_glasses.png",
             "article_desc_text": "$24.00"
           }
+        },
+        "87a9d6cc-9780-45a1-a79f-8ef445634257": {
+          "type": "product_grid",
+          "settings": {
+            "article_title": "Hair Elastics 6 Pack",
+            "article_bg_img": "shopify:\/\/shop_images\/hair_elastics_6.png",
+            "article_desc_text": "$33.00"
+          }
         }
       },
       "block_order": [
         "4f4de0a2-3002-46f4-a1b8-288786599499",
         "03c27415-4a1a-48aa-9f45-26f6d7b41c8d",
-        "d219471e-4ddc-476c-bca9-f8ffefe8e36d"
+        "d219471e-4ddc-476c-bca9-f8ffefe8e36d",
+        "87a9d6cc-9780-45a1-a79f-8ef445634257"
       ],
       "settings": {
         "main_bg_img": "shopify:\/\/shop_images\/Eye_exam_510e10ed-d011-4646-9ee4-15b6ad9777c9.png",
