@@ -15,6 +15,8 @@
     "custom-slideshow": {
       "type": "custom-slideshow",
       "settings": {
+        "main_bg_img": "shopify:\/\/shop_images\/Eye_exam_510e10ed-d011-4646-9ee4-15b6ad9777c9.png",
+        "main_article_text": "Eye Exam"
       }
     },
     "featured_collection": {
