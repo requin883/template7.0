@@ -14,6 +14,19 @@
     },
     "custom-slideshow": {
       "type": "custom-slideshow",
+      "blocks": {
+        "4f4de0a2-3002-46f4-a1b8-288786599499": {
+          "type": "product_grid",
+          "settings": {
+            "article_title": "Round glasses",
+            "article_bg_img": "shopify:\/\/shop_images\/round_glasses.png",
+            "article_desc_text": "$44.00"
+          }
+        }
+      },
+      "block_order": [
+        "4f4de0a2-3002-46f4-a1b8-288786599499"
+      ],
       "settings": {
         "main_bg_img": "shopify:\/\/shop_images\/Eye_exam_510e10ed-d011-4646-9ee4-15b6ad9777c9.png",
         "main_article_text": "Eye Exam"
