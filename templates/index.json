@@ -22,10 +22,19 @@
             "article_bg_img": "shopify:\/\/shop_images\/round_glasses.png",
             "article_desc_text": "$44.00"
           }
+        },
+        "03c27415-4a1a-48aa-9f45-26f6d7b41c8d": {
+          "type": "product_grid",
+          "settings": {
+            "article_title": "Square sunglasses",
+            "article_bg_img": "shopify:\/\/shop_images\/square_sunglasses.png",
+            "article_desc_text": "$59.00"
+          }
         }
       },
       "block_order": [
-        "4f4de0a2-3002-46f4-a1b8-288786599499"
+        "4f4de0a2-3002-46f4-a1b8-288786599499",
+        "03c27415-4a1a-48aa-9f45-26f6d7b41c8d"
       ],
       "settings": {
         "main_bg_img": "shopify:\/\/shop_images\/Eye_exam_510e10ed-d011-4646-9ee4-15b6ad9777c9.png",
