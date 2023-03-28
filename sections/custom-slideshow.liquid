@@ -1,7 +1,7 @@
 <div class="bg-[url('{{section.settings.main_bg_img | img_url : ''}}')] h-[300px] bg-no-repeat bg-cover text-center">
   <p class="pt-[55%] text-[#F8F8F8] josefin subtitle">{{ section.settings.main_article_text }}</p>
 </div>
-<div class="grid grid-flow-col grid-rows-2 gap-0 text-center">
+<div class="grid grid-flow-col grid-cols-2 gap-0 text-center">
   {% for block in section.blocks %}
     <div class="bg-[url('{{block.settings.article_bg_img | img_url: ''}}')] bg-no-repeat bg-cover josefin text-[#F8F8F8] text-center pt-[65%] txt2 h-[180px]">
       <p>{{ block.settings.article_title }}</p>
