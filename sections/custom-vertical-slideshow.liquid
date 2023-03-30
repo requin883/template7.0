@@ -8,7 +8,7 @@
       {% endfor %}
     </div>
   </div>
-  <div class="products-container">
+  <div class="products-container grid place-items-center">
     {% for product in section.settings.collection_product_list limit: 12 %}
       <div class="individual-product-container">
         <a href="{{product.url}}"><img src="{{product.featured_image | img_url: ''}}" alt=""></a>
@@ -44,9 +44,9 @@
       "label": "Insert button text"
     },
     {
-      "type":"product_list",
-      "id":"collection_product_list",
-      "label":"Insert the products to be used"
+      "type": "product_list",
+      "id": "collection_product_list",
+      "label": "Insert the products to be used"
     }
   ]
 }
