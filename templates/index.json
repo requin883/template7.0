@@ -62,6 +62,8 @@
     "custom-vertical-slideshow": {
       "type": "custom-vertical-slideshow",
       "settings": {
+        "section_title": "What's",
+        "btn_text": "View All"
       }
     },
     "featured_collection": {
