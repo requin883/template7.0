@@ -1,12 +1,12 @@
 <section class="vertical-slideshow">
-  <div class="grid place-items-center mt-[40px] mb-[32px]">
+  <div class="grid place-items-center gap-0 mt-[40px] mb-[32px]">
     <h2 class="mb-[32px] title playfair font-normal text-[#3D5656]">{{ section.settings.section_title }}</h2>
-    <div class="filter-container uppercase">
-      <p>New on Optic</p>
-      <span>|</span>
-      <p>Top</p>
-      <span>|</span>
-      <p>On Sale</p>
+    <div class="filter-container gap-0 uppercase grid grid-flow-col">
+      <p class="filter-opt mr-[15px] filter-opt-active">New on Optic</p>
+      <span class="bg-[#3D5656] w-[1px] h-[26px]"></span>
+      <p class="filter-opt mx-[15px]">Top</p>
+      <span class="bg-[#3D5656] w-[1px] h-[26px]"></span>
+      <p class="filter-opt ml-[15px]">On Sale</p>
       {% comment %}
         {% for tag in section.settings.collection_product_list.all_tags %}
           <p>tag</p>
@@ -38,6 +38,16 @@
   </div>
   <button>{{ section.settings.btn_text }}</button>
 </section>
+
+<style>
+  .filter-opt-active {
+    color: #272727;
+  }
+  .filter-opt {
+    color: #a9a9a9;
+    font-size: 12px;
+  }
+</style>
 {% schema %}
 {
   "name": "custom-vertical-slideshow",
