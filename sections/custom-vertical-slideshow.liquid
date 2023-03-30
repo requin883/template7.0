@@ -2,14 +2,14 @@
   <div>
     <h2>{{ section.settings.section_title }}</h2>
     <div class="filter-container">
-      {% for tag in collection[0].all_tags %}
+      {% for tag in collection['Collection1'].all_tags %}
         <p>tag</p>
         <span>|</span>
       {% endfor %}
     </div>
   </div>
   <div class="products-container">
-    {% for product in collection[0].products limit: 12 %}
+    {% for product in collection['Collection1'].products limit: 12 %}
       <div class="individual-product-container">
         <a href="{{product.url}}"><img src="{{product.featured_image | img_url: ''}}" alt=""></a>
         <div>
