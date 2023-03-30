@@ -61,7 +61,8 @@
     },
     "custom-vertical-slideshow": {
       "type": "custom-vertical-slideshow",
-      "settings": {}
+      "settings": {
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
