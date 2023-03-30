@@ -59,6 +59,10 @@
         "main_article_text": "Eye Exam"
       }
     },
+    "custom-vertical-slideshow": {
+      "type": "custom-vertical-slideshow",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -196,6 +200,7 @@
   "order": [
     "hero-section",
     "custom-slideshow",
+    "custom-vertical-slideshow",
     "featured_collection",
     "collage",
     "video",
