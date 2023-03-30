@@ -11,17 +11,20 @@
   <div class="products-container grid place-items-center">
     {% for product in section.settings.collection_product_list limit: 12 %}
       <div class="individual-product-container">
-        <div>
+        <div class="w-[320px]">
           <a href="{{product.url}}"><img src="{{product.featured_image | img_url: ''}}" alt=""></a>
         </div>
-        <div>
-          <p>{{ product.title }}</p>
+        <div class="my-[16px]">
+          <p class="mb-[16px]">{{ product.title }}</p>
           <div>
             <p>
-              <span>{{ product.compare_at_price }}</span>{{ product.price }}
+              {% if product.compare_at_price -%}
+                <span>{{ product.compare_at_price }}</span>
+              {%- endif -%}
+              {{- product.price }}
             </p>
             <div>
-              <img src="" alt="">
+              {% render 'review-stars' %}
             </div>
           </div>
         </div>
