@@ -1,11 +1,18 @@
 <section class="vertical-slideshow">
   <div class="grid place-items-center mt-[40px] mb-[32px]">
     <h2 class="mb-[32px] title playfair font-normal text-[#3D5656]">{{ section.settings.section_title }}</h2>
-    <div class="filter-container">
-      {% for tag in section.settings.collection_product_list.all_tags %}
-        <p>tag</p>
-        <span>|</span>
-      {% endfor %}
+    <div class="filter-container uppercase">
+      <p>New on Optic</p>
+      <span>|</span>
+      <p>Top</p>
+      <span>|</span>
+      <p>On Sale</p>
+      {% comment %}
+        {% for tag in section.settings.collection_product_list.all_tags %}
+          <p>tag</p>
+          <span>|</span>
+        {% endfor %}
+      {% endcomment %}
     </div>
   </div>
   <div class="products-container grid place-items-center">
