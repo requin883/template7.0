@@ -1,7 +1,7 @@
 <section class="vertical-slideshow">
   <div>
     <h2>{{ section.settings.section_title }}</h2>
-    <div class="filter-container {{collections}}">
+    <div class="filter-container {{collection[0]}}">
       {% for tag in collection.all_tags %}
         <p>tag</p>
         <span>|</span>
