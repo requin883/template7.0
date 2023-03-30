@@ -63,7 +63,14 @@
       "type": "custom-vertical-slideshow",
       "settings": {
         "section_title": "What's",
-        "btn_text": "View All"
+        "btn_text": "View All",
+        "collection_product_list": [
+          "test",
+          "test2",
+          "test3",
+          "test4",
+          "test5"
+        ]
       }
     },
     "featured_collection": {
