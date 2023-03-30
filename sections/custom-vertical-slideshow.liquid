@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="products-container">
-    {% for product in collection.products %}
+    {% for product in collection.products limit: 12 %}
       <div class="individual-product-container">
         <a href="{{product.url}}"><img src="{{product.featured_image | img_url: ''}}" alt=""></a>
         <div>
@@ -26,7 +26,7 @@
       </div>
     {% endfor %}
   </div>
-  <button></button>
+  <button>{{ section.settings.btn_text }}</button>
 </section>
 {% schema %}
 {
@@ -38,7 +38,11 @@
       "id": "section_title",
       "label": "Insert Section Title"
     },
-    {}
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Insert button text"
+    }
   ]
 }
 {% endschema %}
