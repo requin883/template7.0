@@ -87,11 +87,18 @@
           "settings": {
             "brand_img": "shopify:\/\/shop_images\/givenchy.png"
           }
+        },
+        "2b7d87e6-a870-42de-b2c9-76ccd81e51a1": {
+          "type": "brands-picker",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/rayban.png"
+          }
         }
       },
       "block_order": [
         "8c3be396-66c9-480f-aeac-30a20ef4c7db",
-        "0f39752b-f962-4583-acff-c4661a6f140a"
+        "0f39752b-f962-4583-acff-c4661a6f140a",
+        "2b7d87e6-a870-42de-b2c9-76ccd81e51a1"
       ],
       "settings": {
       }
