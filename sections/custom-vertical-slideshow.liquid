@@ -28,7 +28,7 @@
               {% if product.compare_at_price -%}
                 <span>{{ product.compare_at_price | money }}</span>
               {%- endif -%}
-              {{- product.price }}
+              {{- product.price | money }}
             </p>
             {% render 'review-stars' %}
           </div>
