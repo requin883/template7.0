@@ -1,6 +1,6 @@
 <section class="brands-row-container">
   <div class="mx-[20px]">
-    {% for block in section.settings.blocks %}
+    {% for block in section.blocks %}
       <img class="w-full h-auto" src="{{block.settings.brand_img | image_url: ''}}" alt="">
     {% endfor %}
   </div>
