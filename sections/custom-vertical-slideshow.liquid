@@ -22,11 +22,11 @@
           <a href="{{product.url}}"><img src="{{product.featured_image | img_url: ''}}" alt=""></a>
         </div>
         <div class="my-[16px]">
-          <p class="mb-[16px]">{{ product.title }}</p>
+          <p class="mb-[16px] josefin text-[#272727]">{{ product.title }}</p>
           <div class="grid grid-flow-col place-items-between">
-            <p>
+            <p class="josefin text-[14px] text-[#3D5656]">
               {% if product.compare_at_price -%}
-                <span>{{ product.compare_at_price | money }}</span>
+                <span class="text-[#7E7E7E]">{{ product.compare_at_price | money }}</span>
               {%- endif -%}
               {{- product.price | money }}
             </p>
@@ -36,7 +36,7 @@
       </div>
     {% endfor %}
   </div>
-  <button>{{ section.settings.btn_text }}</button>
+  <button class="w-full mx-[20px] border border-[#3D5656] text-center">{{ section.settings.btn_text }}</button>
 </section>
 
 <style>
