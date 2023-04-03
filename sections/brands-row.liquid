@@ -1,5 +1,5 @@
 <section class="brands-row-container">
-  <div class="mx-[20px]">
+  <div class="mx-[20px] grid place-content-evenly">
     {% for block in section.blocks %}
       <div class="mx-[68px]">
         <img class="w-full h-auto" src="{{block.settings.brand_img | img_url: ''}}" alt="">
