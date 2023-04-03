@@ -1,9 +1,28 @@
-<p>brands-row</p>
+<section class="brands-row-container">
+  <div class="mx-[20px]">
+    {% for block in section.settings.blocks %}
+      <img src="{{block.settings.brand_img | img_url: ''}}" alt="">
+    {% endfor %}
+  </div>
+</section>
 
 {% schema %}
 {
   "name": "brands-row",
   "class": "section",
-  "settings": []
+  "settings": [],
+  "blocks": [
+    {
+      "name": "brands-picker",
+      "type": "brands-picker",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "brand_img",
+          "label": "Insert brand image"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
