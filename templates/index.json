@@ -73,6 +73,10 @@
         ]
       }
     },
+    "brands-row": {
+      "type": "brands-row",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -211,6 +215,7 @@
     "hero-section",
     "custom-slideshow",
     "custom-vertical-slideshow",
+    "brans-row",
     "featured_collection",
     "collage",
     "video",
