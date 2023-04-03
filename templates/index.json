@@ -75,7 +75,19 @@
     },
     "brands-row": {
       "type": "brands-row",
-      "settings": {}
+      "blocks": {
+        "8c3be396-66c9-480f-aeac-30a20ef4c7db": {
+          "type": "brands-picker",
+          "settings": {
+            "brand_img": "shopify:\/\/shop_images\/oakley.png"
+          }
+        }
+      },
+      "block_order": [
+        "8c3be396-66c9-480f-aeac-30a20ef4c7db"
+      ],
+      "settings": {
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
