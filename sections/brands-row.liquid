@@ -1,7 +1,7 @@
 <section class="brands-row-container">
   <div class="mx-[20px]">
     {% for block in section.settings.blocks %}
-      <img src="{{block.settings.brand_img | img_url: ''}}" alt="">
+      <img class="w-full h-auto" src="{{block.settings.brand_img | img_url: ''}}" alt="">
     {% endfor %}
   </div>
 </section>
