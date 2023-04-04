@@ -1,8 +1,8 @@
 <section class="features-info">
   <div class="mx-[20px] bg-[{{section.settings.bg_color}}]">
     {% for block in section.blocks %}
-      <div><img src="" alt=""></div>
-      <p>{{ block.settings['block-text'] }}</p>
+      <div><img src="{{block.settings.block_icon | img_url :''}}" alt=""></div>
+      <p>{{ block.settings.block_text }}</p>
     {% endfor %}
   </div>
 </section>
@@ -25,12 +25,12 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "block-icon",
+          "id": "block_icon",
           "label": "Input Icon"
         },
         {
           "type": "text",
-          "id": "block-text",
+          "id": "block_text",
           "label": "Input text"
         }
       ]
