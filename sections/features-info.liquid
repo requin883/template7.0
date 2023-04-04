@@ -2,7 +2,7 @@
   <div class="px-[20px] py-[16px] bg-[{{section.settings.bg_color}}] grid place-items-center">
     {% for block in section.blocks %}
       <div class="mb-[8px]"><img src="{{block.settings.block_icon | img_url :''}}" alt=""></div>
-      <p class="josefin text-[#F8F8F8] txt5 {% unless forloop.last %} mb-[16px] {%endunless%}">
+      <p class="josefin {% if block.settings.show_uppercase%} uppercase {%endif%} text-[#F8F8F8] txt5 {% unless forloop.last %} mb-[16px] {%endunless%}">
         {{ block.settings.block_text }}
       </p>
     {% endfor %}
@@ -17,7 +17,8 @@
     {
       "type": "color",
       "id": "bg_color",
-      "label": "Insert background color"
+      "label": "Insert background color",
+      "default": "#3D5656"
     }
   ],
   "blocks": [
@@ -34,6 +35,12 @@
           "type": "text",
           "id": "block_text",
           "label": "Input text"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_uppercase",
+          "label": "Choose word casing",
+          "default": "true"
         }
       ]
     }
