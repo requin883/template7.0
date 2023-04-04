@@ -112,7 +112,44 @@
     },
     "features-info": {
       "type": "features-info",
+      "blocks": {
+        "ebf3480a-fcb8-4130-b14e-624b486062c5": {
+          "type": "icons-with-text",
+          "settings": {
+            "block_icon": "shopify:\/\/shop_images\/airplane2.png",
+            "block_text": "Fast Delivery"
+          }
+        },
+        "e2854080-2bdc-4080-88b1-ec16725d5d63": {
+          "type": "icons-with-text",
+          "settings": {
+            "block_icon": "shopify:\/\/shop_images\/discount_7873bdc6-ab49-42e8-b5f3-10d001f9e03e.png",
+            "block_text": "especial discounts"
+          }
+        },
+        "976c6880-f896-4bbd-bbfe-9175a1c19722": {
+          "type": "icons-with-text",
+          "settings": {
+            "block_icon": "shopify:\/\/shop_images\/secure-checkout_88f75228-5579-41d0-b92b-2f460ac57be8.png",
+            "block_text": "secure checkout"
+          }
+        },
+        "541a85fd-c13a-4857-b3fc-32725326c599": {
+          "type": "icons-with-text",
+          "settings": {
+            "block_icon": "shopify:\/\/shop_images\/returns.png",
+            "block_text": "money returns"
+          }
+        }
+      },
+      "block_order": [
+        "ebf3480a-fcb8-4130-b14e-624b486062c5",
+        "e2854080-2bdc-4080-88b1-ec16725d5d63",
+        "976c6880-f896-4bbd-bbfe-9175a1c19722",
+        "541a85fd-c13a-4857-b3fc-32725326c599"
+      ],
       "settings": {
+        "bg_color": "#3d5656"
       }
     },
     "featured_collection": {
