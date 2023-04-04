@@ -15,20 +15,31 @@
     {% if section.settings.newsletter_enabled %}
       <section class="newsletter-section">
         <div class="newsletter-wrapper grid place-items-center">
-          <h2 class="josefin txt2 uppercase">{{ section.settings.newsletter_heading }}</h2>
-          <form action="/contact" method="post" class="newsletter-form grid place-items-center" data-ajax-form>
+          <h2 class="josefin txt2 uppercase mb-[25px]">{{ section.settings.newsletter_heading }}</h2>
+          <form
+            class="w-full text-center"
+            action="/contact"
+            method="post"
+            class="newsletter-form grid place-items-center"
+            data-ajax-form
+          >
             {{ form.errors | default_errors }}
             <input type="hidden" name="form_type" value="customer">
             <input type="hidden" name="utf8" value="✓">
             <input type="hidden" name="contact[tags]" value="newsletter">
-            <input type="hidden" name="contact[source]" value="newsletter">
+            <input
+              class="bg-[#3D5656] opacity-10 w-full text-center px-[32px] py-[16px]"
+              type="hidden"
+              name="contact[source]"
+              value="newsletter"
+            >
             <input
               type="email"
               name="contact[email]"
-              placeholder="adress@youremail.com"
+              placeholder=""
               required=""
             >
-            <button type="submit" class="btn--submit uppercase">subscribe</button>
+            <button type="submit" class="btn--submit uppercase mb-[36px] mt-[16px]">subscribe</button>
           </form>
         </div>
       </section>
@@ -36,7 +47,11 @@
   </div>
   <p>{{ section.settings.footer_copyright_text }}</p>
 </footer>
-
+<style>
+  .btn--submit::after {
+    content: 'ADDRESS@YOUREMAIL.COM';
+  }
+</style>
 {% schema %}
 {
   "name": "footer",
