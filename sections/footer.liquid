@@ -33,7 +33,7 @@
               value="newsletter"
             >
             <input
-              class="bg-[rgba(61,86,86,0.1)] w-full text-center px-[32px] py-[16px]"
+              class="bg-[rgba(61,86,86,0.1)] input-container w-full text-center px-[32px] py-[16px]"
               type="email"
               name="contact[email]"
               required=""
@@ -47,6 +47,11 @@
   </div>
   <p>{{ section.settings.footer_copyright_text }}</p>
 </footer>
+<style>
+  .input-container::placeholder {
+    color: #3d5656;
+  }
+</style>
 {% schema %}
 {
   "name": "footer",
