@@ -1,0 +1,35 @@
+<section class="features-info">
+  <div class="mx-[20px]">
+    {% for block in section.blocks %}
+      <div><img src="" alt=""></div>
+      <p>{{ block.settings.block-text }}</p>
+      
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "features-info",
+  "type": "features-info",
+  "settings": {},
+  "blocks": [
+    {
+      "name": "icons-with-text",
+      "type": "icons-with-text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "block-icon",
+          "label": "Input Icon"
+        },
+        {
+          "type": "text",
+          "id": "block-text",
+          "label": "Input text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

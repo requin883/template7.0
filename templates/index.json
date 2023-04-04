@@ -100,8 +100,11 @@
         "0f39752b-f962-4583-acff-c4661a6f140a",
         "2b7d87e6-a870-42de-b2c9-76ccd81e51a1"
       ],
-      "settings": {
-      }
+      "settings": {}
+    },
+    "features-info": {
+      "type": "features-info",
+      "settings": {}
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -242,6 +245,7 @@
     "custom-slideshow",
     "custom-vertical-slideshow",
     "brands-row",
+    "features-info",
     "featured_collection",
     "collage",
     "video",
