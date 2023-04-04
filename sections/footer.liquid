@@ -3,7 +3,7 @@
   <div class="links-container grid place-items-center">
     {% for block in section.settings.blocks %}
       <div class="inner-link-list mb-[32px] grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
-        {% for link in block.settings.footer_link_list.links %}
+        {% for link in block.settings.footer_menu_list.links %}
           <a class="josefin txt3" href="{{link.url}}">{{ link.title }}</a>
         {% endfor %}
       </div>
