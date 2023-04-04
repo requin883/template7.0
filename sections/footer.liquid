@@ -48,8 +48,14 @@
   <p>{{ section.settings.footer_copyright_text }}</p>
 </footer>
 <style>
+  .btn--submit {
+    position: relative;
+  }
   .btn--submit::after {
     content: 'ADDRESS@YOUREMAIL.COM';
+    position: absolute;
+    top: 45%;
+    left: 35%;
   }
 </style>
 {% schema %}
