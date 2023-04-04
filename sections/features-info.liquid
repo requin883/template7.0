@@ -1,7 +1,7 @@
 <section class="features-info">
   <div class="px-[20px] py-[16px] bg-[{{section.settings.bg_color}}] grid place-items-center gap-0">
     {% for block in section.blocks %}
-      <div class="mb-[8px]"><img src="{{block.settings.block_icon | img_url :''}}" alt=""></div>
+      <div class="mb-[8px] max-w-[40px]"><img src="{{block.settings.block_icon | img_url :''}}" alt=""></div>
       <p class="josefin {% if block.settings.show_uppercase%} uppercase {%endif%} text-[#F8F8F8] txt5 {% unless forloop.last %} mb-[16px] {%endunless%}">
         {{ block.settings.block_text }}
       </p>
