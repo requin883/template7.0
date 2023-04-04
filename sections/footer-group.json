@@ -4,9 +4,33 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "3728ae5a-dd37-4e64-87a3-fdbed7c297b4": {
+          "type": "menu_list",
+          "settings": {
+            "footer_menu_list": "new_template7_1"
+          }
+        },
+        "a9441004-8823-4621-a8a9-0baa81a77e03": {
+          "type": "menu_list",
+          "settings": {
+            "footer_menu_list": "new_template7_2"
+          }
+        },
+        "03217d56-8c5b-48d8-99fd-a0f4e89b0c94": {
+          "type": "menu_list",
+          "settings": {
+            "footer_menu_list": "new_template7_2"
+          }
+        }
+      },
+      "block_order": [
+        "3728ae5a-dd37-4e64-87a3-fdbed7c297b4",
+        "a9441004-8823-4621-a8a9-0baa81a77e03",
+        "03217d56-8c5b-48d8-99fd-a0f4e89b0c94"
+      ],
       "settings": {
         "footer_title": "Blank Theme",
-        "footer_link_list": "new_template7_menu",
         "show_link_uppercase": true,
         "newsletter_enabled": true,
         "newsletter_heading": "Subscribe to our emails",
