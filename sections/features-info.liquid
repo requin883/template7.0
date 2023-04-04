@@ -1,10 +1,12 @@
 <section class="features-info">
-  <div class="px-[20px] bg-[{{section.settings.bg_color}}] grid place-items-center">
+  <div class="px-[20px] py-[16px] bg-[{{section.settings.bg_color}}] grid place-items-center gap-[16px]">
     {% for block in section.blocks %}
-      <div class="mb-[8px]"><img src="{{block.settings.block_icon | img_url :''}}" alt=""></div>
-      <p class="josefin text-[#F8F8F8] txt5 {% unless forloop.last %} mb-[16px] {%endunless%}">
-        {{ block.settings.block_text }}
-      </p>
+      <div class="features-info-container">
+        <div class="mb-[8px]"><img src="{{block.settings.block_icon | img_url :''}}" alt=""></div>
+        <p class="josefin text-[#F8F8F8] txt5">
+          {{ block.settings.block_text }}
+        </p>
+      </div>
     {% endfor %}
   </div>
 </section>
