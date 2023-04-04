@@ -4,7 +4,9 @@
     {% for block in section.blocks %}
       <div class="inner-link-list mb-[32px] grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
         {% for link in block.settings.footer_menu_list.links %}
-          <a class="josefin txt3" href="{{link.url}}">{{ link.title }}</a>
+          <a class="josefin txt3 {% if section.settings.show_link_uppercase %} uppercase {%endif%}" href="{{link.url}}">
+            {{- link.title -}}
+          </a>
         {% endfor %}
       </div>
     {% endfor %}
