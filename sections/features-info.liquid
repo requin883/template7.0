@@ -1,5 +1,5 @@
 <section class="features-info">
-  <div class="mx-[20px] bg-[{{section.settings.bg_color}}]">
+  <div class="px-[20px] bg-[{{section.settings.bg_color}}] grid place-items-center">
     {% for block in section.blocks %}
       <div><img src="{{block.settings.block_icon | img_url :''}}" alt=""></div>
       <p>{{ block.settings.block_text }}</p>
