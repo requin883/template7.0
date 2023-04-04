@@ -1,8 +1,8 @@
 <section class="features-info">
-  <div class="mx-[20px]">
+  <div class="mx-[20px] bg-[{{section.settings.bg_color}}]">
     {% for block in section.blocks %}
       <div><img src="" alt=""></div>
-      <p>{{ block.settings.block-text }}</p>
+      <p>{{ block.settings['block-text'] }}</p>
     {% endfor %}
   </div>
 </section>
@@ -11,7 +11,13 @@
 {
   "name": "features-info",
   "class": "section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Insert background color"
+    }
+  ],
   "blocks": [
     {
       "name": "icons-with-text",
