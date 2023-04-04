@@ -2,8 +2,7 @@
   <div class="mx-[20px]">
     {% for block in section.blocks %}
       <div><img src="" alt=""></div>
-      <p>{{ block.settings.block-text }}</p>
-      
+      <p>{{ block.settings['block-text'] }}</p>
     {% endfor %}
   </div>
 </section>
@@ -11,8 +10,8 @@
 {% schema %}
 {
   "name": "features-info",
-  "type": "features-info",
-  "settings": {},
+  "class": "section",
+  "settings": [],
   "blocks": [
     {
       "name": "icons-with-text",
