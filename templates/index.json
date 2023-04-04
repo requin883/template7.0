@@ -113,6 +113,7 @@
     "features-info": {
       "type": "features-info",
       "settings": {
+        "bg_color": "#334fb4"
       }
     },
     "featured_collection": {
