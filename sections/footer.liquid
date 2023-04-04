@@ -1,16 +1,20 @@
 <footer class="grid place-items-center">
-  <h2>{{ section.settings.footer_title }}</h2>
+  <h2 class="poppins txt1 text-black mb-[32px]">{{ section.settings.footer_title }}</h2>
   <div class="links-container grid place-items-center">
-    {% for link in section.settings.footer_link_list.links %}
-      <a href="{{link.url}}">{{ link.title }}</a>
+    {% for block in section.settings.blocks %}
+      <div class="inner-link-list mb-[32px] grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
+        {% for link in block.settings.footer_link_list.links %}
+          <a class="josefin txt3" href="{{link.url}}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
     {% endfor %}
   </div>
   <div class="newsletter container grid place-items-center">
     {% if section.settings.newsletter_enabled %}
       <section class="newsletter-section">
         <div class="newsletter-wrapper grid place-items-center">
-          <h2>{{ section.settings.newsletter_heading }}</h2>
-          <form action="/contact" method="post" class="newsletter-form" data-ajax-form>
+          <h2 class="josefin txt2">{{ section.settings.newsletter_heading }}</h2>
+          <form action="/contact" method="post" class="newsletter-form grid place-items-center" data-ajax-form>
             {{ form.errors | default_errors }}
             <input type="hidden" name="form_type" value="customer">
             <input type="hidden" name="utf8" value="✓">
@@ -42,11 +46,6 @@
       "label": "Insert footer title"
     },
     {
-      "type": "link_list",
-      "id": "footer_link_list",
-      "label": "Choose the link list for the footer"
-    },
-    {
       "type": "checkbox",
       "id": "show_link_uppercase",
       "label": "Change word case",
@@ -67,6 +66,19 @@
       "type": "text",
       "id": "footer_copyright_text",
       "label": "Please insert the copyright text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "menu_list",
+      "type": "menu_list",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "footer_menu_list",
+          "label": "Insert footer menu list"
+        }
+      ]
     }
   ]
 }
