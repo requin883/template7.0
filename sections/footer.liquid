@@ -28,12 +28,12 @@
             <input type="hidden" name="utf8" value="✓">
             <input type="hidden" name="contact[tags]" value="newsletter">
             <input
-              class="bg-[#3D5656] opacity-10 w-full text-center px-[32px] py-[16px]"
               type="hidden"
               name="contact[source]"
               value="newsletter"
             >
             <input
+              class="bg-[rgba(61,86,86,0.1)] w-full text-center px-[32px] py-[16px]"
               type="email"
               name="contact[email]"
               placeholder=""
@@ -47,17 +47,6 @@
   </div>
   <p>{{ section.settings.footer_copyright_text }}</p>
 </footer>
-<style>
-  .btn--submit {
-    position: relative;
-  }
-  .btn--submit::before {
-    content: 'ADDRESS@YOUREMAIL.COM';
-    position: absolute;
-    top: 45%;
-    left: 35%;
-  }
-</style>
 {% schema %}
 {
   "name": "footer",
