@@ -1,17 +1,18 @@
-<div class="bg-[url('{{section.settings.main_bg_img | img_url : ''}}')] grid grid-flow-row justify-center content-end h-[300px] bg-no-repeat bg-cover text-center">
-  <p class="text-[#F8F8F8] josefin subtitle">{{ section.settings.main_article_text }}</p>
-</div>
-<div class="grid grid-flow-row grid-cols-2 gap-0 text-center">
-  {% for block in section.blocks %}
-    <div class="bg-[url('{{block.settings.article_bg_img | img_url: ''}}')] bg-no-repeat bg-cover josefin text-[#F8F8F8] grid grid-flow-row justify-center content-end txt2 h-[180px]">
-      <div>
-        <p>{{ block.settings.article_title }}</p>
-        <p>{{ block.settings.article_desc_text }}</p>
+<section class="custom-slideshow md:mx-[36px]">
+  <div class="bg-[url('{{section.settings.main_bg_img | img_url : ''}}')] grid grid-flow-row justify-center content-end h-[300px] bg-no-repeat bg-cover text-center">
+    <p class="text-[#F8F8F8] josefin subtitle">{{ section.settings.main_article_text }}</p>
+  </div>
+  <div class="grid grid-flow-row grid-cols-2 gap-0 text-center">
+    {% for block in section.blocks %}
+      <div class="bg-[url('{{block.settings.article_bg_img | img_url: ''}}')] bg-no-repeat bg-cover josefin text-[#F8F8F8] grid grid-flow-row justify-center content-end txt2 h-[180px]">
+        <div>
+          <p>{{ block.settings.article_title }}</p>
+          <p>{{ block.settings.article_desc_text }}</p>
+        </div>
       </div>
-    </div>
-  {% endfor %}
-</div>
-
+    {% endfor %}
+  </div>
+</section>
 {% schema %}
 {
   "name": "Custom Slideshow",
