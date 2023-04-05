@@ -2,7 +2,7 @@
   <h2 class="poppins txt1 text-black mb-[32px] uppercase tracking-[10px]">{{ section.settings.footer_title }}</h2>
   <div class="links-container grid place-items-center md:gap-[270.5px] md:grid-flow-col">
     {% for block in section.blocks %}
-      <div class="inner-link-list mb-[32px] grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
+      <div class="inner-link-list !mb-[32px] grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
         {% for link in block.settings.footer_menu_list.links %}
           <a class="josefin txt3 {% if section.settings.show_link_uppercase %} uppercase {%endif%}" href="{{link.url}}">
             {{- link.title -}}
