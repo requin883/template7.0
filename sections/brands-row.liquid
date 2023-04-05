@@ -1,7 +1,7 @@
 <section class="brands-row-container mb-[96.62px]">
-  <div class="mx-[20px] md:mx-[36px] grid place-content-evenly gap-[80px]">
+  <div class="mx-[20px] md:mx-[36px] grid place-content-evenly gap-[80px] md:gap-[71.67px] md:grid-flow-col">
     {% for block in section.blocks %}
-      <div class="mx-[68px]">
+      <div class="mx-[68px] md:mx-0">
         <img class="w-full h-auto" src="{{block.settings.brand_img | img_url: ''}}" alt="">
       </div>
     {% endfor %}
