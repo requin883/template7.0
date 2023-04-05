@@ -13,7 +13,7 @@
   </div>
   <div class="newsletter container grid place-items-center mt-[32px]">
     {% if section.settings.newsletter_enabled %}
-      <section class="newsletter-section">
+      <section class="newsletter-section md:w-[359px]">
         <div class="newsletter-wrapper grid place-items-center">
           <h2 class="josefin txt2 uppercase mb-[25px]">{{ section.settings.newsletter_heading }}</h2>
           <form
@@ -33,7 +33,7 @@
               value="newsletter"
             >
             <input
-              class="bg-[rgba(61,86,86,0.1)] input-container w-full text-center px-[32px] py-[16px]"
+              class="bg-[rgba(61,86,86,0.1)] input-container w-full text-center px-[32px] py-[16px] md:h-[45px]"
               type="email"
               name="contact[email]"
               required=""
@@ -41,7 +41,7 @@
             >
             <button
               type="submit"
-              class="btn--submit hover:bg-[rgba(61,86,86,0.1)] hover:text-[#3D5656] uppercase mb-[36px] text-white py-[16px] w-full bg-[#3D5656]  mt-[16px]"
+              class="btn--submit hover:bg-[rgba(61,86,86,0.1)] h-[45px] hover:text-[#3D5656] uppercase mb-[36px] text-white py-[16px] w-full bg-[#3D5656]  mt-[16px]"
             >
               subscribe
             </button>
@@ -55,6 +55,13 @@
 <style>
   .input-container::placeholder {
     color: #3d5656;
+  }
+  @media screen and (min-width: 768px) {
+    .form-container {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 16px;
+    }
   }
 </style>
 {% schema %}
