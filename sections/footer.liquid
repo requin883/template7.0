@@ -2,7 +2,7 @@
   <h2 class="poppins txt1 text-black mb-[32px] uppercase tracking-[10px]">{{ section.settings.footer_title }}</h2>
   <div class="links-container grid place-items-center md:gap-[270.5px] md:grid-flow-col">
     {% for block in section.blocks %}
-      <div class="inner-link-list !mb-[32px] grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
+      <div class="inner-link-list !mb-[32px] self-start grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
         {% for link in block.settings.footer_menu_list.links %}
           <a class="josefin txt3 {% if section.settings.show_link_uppercase %} uppercase {%endif%}" href="{{link.url}}">
             {{- link.title -}}
@@ -32,19 +32,21 @@
               name="contact[source]"
               value="newsletter"
             >
-            <input
-              class="bg-[rgba(61,86,86,0.1)] input-container w-full text-center px-[32px] py-[16px] md:h-[45px]"
-              type="email"
-              name="contact[email]"
-              required=""
-              placeholder="ADDRESS@YOUREMAIL.COM"
-            >
-            <button
-              type="submit"
-              class="btn--submit hover:bg-[rgba(61,86,86,0.1)] h-[45px] hover:text-[#3D5656] uppercase mb-[36px] text-white py-[16px] w-full bg-[#3D5656]  mt-[16px]"
-            >
-              subscribe
-            </button>
+            <div class="md:grid">
+              <input
+                class="bg-[rgba(61,86,86,0.1)] input-container w-full text-center px-[32px] py-[16px] md:h-[45px]"
+                type="email"
+                name="contact[email]"
+                required=""
+                placeholder="ADDRESS@YOUREMAIL.COM"
+              >
+              <button
+                type="submit"
+                class="btn--submit hover:bg-[rgba(61,86,86,0.1)] h-[45px] hover:text-[#3D5656] uppercase mb-[36px] text-white py-[16px] w-full bg-[#3D5656]  mt-[16px]"
+              >
+                subscribe
+              </button>
+            </div>
           </form>
         </div>
       </section>
