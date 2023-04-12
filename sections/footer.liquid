@@ -5,7 +5,7 @@
       <div class="inner-link-list !mb-[32px] self-start grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
         {% for link in block.settings.footer_menu_list.links %}
           <a
-            class="josefin txt3 font-[#333] {% if section.settings.show_link_uppercase %} uppercase {%endif%}"
+            class="josefin txt3 font-[#333333] {% if section.settings.show_link_uppercase %} uppercase {%endif%}"
             href="{{link.url}}"
           >
             {{- link.title -}}
@@ -45,7 +45,7 @@
               >
               <button
                 type="submit"
-                class="btn--submit hover:bg-[rgba(61,86,86,0.1)] h-[45px] hover:text-[#3D5656] uppercase text-white max-[700px]:py-auto w-full bg-[#3D5656]  max-[700px]:mt-[16px]"
+                class="btn--submit hover:bg-[rgba(61,86,86,0.1)] h-[45px] hover:text-[#3D5656] uppercase text-white max-[700px]:py-auto w-full bg-[#3D5656]  max-[700px]:mt-[16px] md:px-[34px]"
               >
                 subscribe
               </button>
