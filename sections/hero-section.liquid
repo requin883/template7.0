@@ -37,14 +37,6 @@
       },
     },
   });
-
-  let windowWidth = window.innerWidth;
-  window.addEventListener('load', () => {
-    if (windowWidth >= 600) {
-      changeSlideOpacity();
-    }
-  });
-  window.addEventListener('resize', changeSlideOpacity);
   const changeSlideOpacity = () => {
     const allSlides = document.querySelectorAll('.swiper-slide');
     const nextSlide = document.querySelector('.swiper-slide-next');
@@ -55,6 +47,14 @@
       });
     }
   };
+
+  let windowWidth = window.innerWidth;
+  window.addEventListener('load', () => {
+    if (windowWidth >= 600) {
+      changeSlideOpacity();
+    }
+  });
+  window.addEventListener('resize', changeSlideOpacity);
 </script>
 {% schema %}
 {
