@@ -1,5 +1,7 @@
-<footer class="grid place-items-center px-[20px] lg:grid-rows-2 lg:grid-cols-3 md:px-[36px] mt-[18px]">
-  <h2 class="poppins txt1 text-black mb-[32px] uppercase tracking-[10px]">{{ section.settings.footer_title }}</h2>
+<footer class="grid place-items-center lg:pt-[60px] lg:mt-0 px-[20px] lg:grid-rows-2 lg:grid-cols-3 md:px-[36px] mt-[18px]">
+  <h2 class="poppins txt1 lg:justify-self-center lg:self-start text-black mb-[32px] uppercase tracking-[10px]">
+    {{ section.settings.footer_title }}
+  </h2>
   <div class="links-container lg:order-2 grid place-items-center lg:gap-[105.75px] md:gap-[270.5px] md:grid-flow-col">
     {% for block in section.blocks %}
       <div class="inner-link-list !mb-[32px] self-start grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
