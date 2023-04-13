@@ -205,8 +205,12 @@
   function nav() {
     const nav = document.querySelector('.main-nav');
     const burger = document.querySelector('.burger');
+    const burgerTablet = document.querySelector('.burget-tablet');
     const closeBurger = document.querySelector('.closeBurger');
     burger.addEventListener('click', () => {
+      nav.classList.add('show');
+    });
+    burgerTablet.addEventListener('click', () => {
       nav.classList.add('show');
     });
     closeBurger.addEventListener('click', () => {
