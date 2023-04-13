@@ -19,42 +19,42 @@
   }
 </style>
 <script>
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      680: {
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
-      breakpoints: {
-        680: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
+    },
+  });
 
-    let windowWidth = window.innerWidth;
-    window.addEventListener('load',()=>{
-      if(windowWidth>= 600px){
+  let windowWidth = window.innerWidth;
+  window.addEventListener('load', () => {
+    if (windowWidth >= 600) {
       changeSlideOpacity();
     }
-    })
-    window.addEventListener('resize',changeSlideOpacity)
-    const changeSlideOpacity = ()=>{
-      const allSlides = document.querySelectorAll('.swiper-slide');
-      const nextSlide = document.querySelector('.swiper-slide-next');
-      windowWidth = window.innerWidth;
-      if(windowWidth>=600px){
-     allSlides.forEach(slide=>{
-      slide.classList.add('opacity-[0.5]');
-     })
+  });
+  window.addEventListener('resize', changeSlideOpacity);
+  const changeSlideOpacity = () => {
+    const allSlides = document.querySelectorAll('.swiper-slide');
+    const nextSlide = document.querySelector('.swiper-slide-next');
+    windowWidth = window.innerWidth;
+    if (windowWidth >= 600) {
+      allSlides.forEach((slide) => {
+        slide.classList.add('opacity-[0.5]');
+      });
     }
-  }
+  };
 </script>
 {% schema %}
 {
