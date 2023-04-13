@@ -17,6 +17,9 @@
     .swiper-slide-active img {
     }
   }
+  .swiper-slide-next {
+    opacity: 1;
+  }
 </style>
 <script>
   const swiper = new Swiper('.swiper', {
@@ -39,7 +42,6 @@
   });
   const changeSlideOpacity = () => {
     const allSlides = document.querySelectorAll('.swiper-slide');
-    const nextSlide = document.querySelector('.swiper-slide-next');
     windowWidth = window.innerWidth;
     if (windowWidth >= 600) {
       allSlides.forEach((slide) => {
