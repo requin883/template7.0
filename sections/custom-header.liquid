@@ -90,6 +90,9 @@
           {%- endif -%}
         </div>
       </a>
+      <div class="burger burger-tablet">
+        {%- render 'burger-icon' -%}
+      </div>
     </div>
   </nav>
 </header>
@@ -197,7 +200,11 @@
     padding: 0.5rem;
     cursor: pointer;
   }
-
+  @media screen and (min-with: 500px) {
+    .burger-tablet {
+      display: block;
+    }
+  }
   @media (min-width: 768px) {
     .nav-links {
       display: flex;
@@ -230,6 +237,11 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    .burger-tablet {
+      display: none;
     }
   }
 {% endstylesheet %}
