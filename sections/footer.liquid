@@ -1,6 +1,6 @@
-<footer class="grid place-items-center px-[20px] md:px-[36px] mt-[18px]">
+<footer class="grid place-items-center px-[20px] lg:grid-rows-2 lg:grid-cols-3 md:px-[36px] mt-[18px]">
   <h2 class="poppins txt1 text-black mb-[32px] uppercase tracking-[10px]">{{ section.settings.footer_title }}</h2>
-  <div class="links-container grid place-items-center md:gap-[270.5px] md:grid-flow-col">
+  <div class="links-container lg:order-3 grid place-items-center lg:[105.75px] md:gap-[270.5px] md:grid-flow-col">
     {% for block in section.blocks %}
       <div class="inner-link-list !mb-[32px] self-start grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
         {% for link in block.settings.footer_menu_list.links %}
@@ -14,7 +14,7 @@
       </div>
     {% endfor %}
   </div>
-  <div class="newsletter container grid place-items-center mt-[32px]">
+  <div class="newsletter-container grid place-items-center mt-[32px] lg:order-4">
     {% if section.settings.newsletter_enabled %}
       <section class="newsletter-section md:w-[359px]">
         <div class="newsletter-wrapper grid place-items-center">
@@ -55,7 +55,9 @@
       </section>
     {% endif %}
   </div>
-  <p class="px-[45px] mx-0 uppercase josefin text-[10px] py-[36px]">{{ section.settings.footer_copyright_text }}</p>
+  <p class="px-[45px] mx-0 uppercase josefin text-[10px] py-[36px] lg:order-2 lg:col-span-3">
+    {{ section.settings.footer_copyright_text }}
+  </p>
 </footer>
 <style>
   .input-container::placeholder {
