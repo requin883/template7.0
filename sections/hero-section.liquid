@@ -1,11 +1,11 @@
-<div class="hero-section pb-[50px]">
+<div class="hero-section pb-[50px] md:pb-[68px]">
   <div>
     <p class="hero-title text-center josefin mx-auto mb-[40px] title mt-[26px] text-[#7E7E7E]">
       {{ section.settings.hero_title }}
     </p>
   </div>
   <div class="grid place-items-center swiper">
-    <div class="swiper-wrapper md:mb-[68px] grid place-items-center grid-flow-col text-center">
+    <div class="swiper-wrapper grid place-items-center grid-flow-col text-center">
       {% render 'product-card' for section.settings.col_product_list as product, swiper: 'swiper-slide' %}
     </div>
     <div class="swiper-button-prev font-black !block"></div>

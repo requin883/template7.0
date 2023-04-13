@@ -20,7 +20,9 @@
     {% if section.settings.newsletter_enabled %}
       <section class="newsletter-section md:w-[359px]">
         <div class="newsletter-wrapper grid place-items-center">
-          <h2 class="josefin lg:place-self-end txt2 uppercase mb-[25px]">{{ section.settings.newsletter_heading }}</h2>
+          <h2 class="josefin text-[#272727] lg:place-self-end txt2 uppercase mb-[25px]">
+            {{ section.settings.newsletter_heading }}
+          </h2>
           <form
             class="w-full text-center"
             action="/contact"
@@ -47,7 +49,7 @@
               >
               <button
                 type="submit"
-                class="btn--submit hover:bg-[rgba(61,86,86,0.1)] h-[45px] hover:text-[#3D5656] uppercase text-white max-[700px]:py-auto w-full bg-[#3D5656]  max-[700px]:mt-[16px] md:px-[34px]"
+                class="btn--submit text-[#F8F8F8] hover:bg-[rgba(61,86,86,0.1)] h-[45px] hover:text-[#3D5656] uppercase text-white max-[700px]:py-auto w-full bg-[#3D5656]  max-[700px]:mt-[16px] md:px-[34px]"
               >
                 subscribe
               </button>
