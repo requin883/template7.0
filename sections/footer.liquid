@@ -7,7 +7,7 @@
       <div class="inner-link-list !mb-[32px] self-start grid place-items-center {%unless forloop.last %} gap-[8px] {%endunless%}">
         {% for link in block.settings.footer_menu_list.links %}
           <a
-            class="josefin txt3 font-[#333333] {% if section.settings.show_link_uppercase %} uppercase {%endif%}"
+            class="josefin txt3 text-[#333333] {% if section.settings.show_link_uppercase %} uppercase {%endif%}"
             href="{{link.url}}"
           >
             {{- link.title -}}
