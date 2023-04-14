@@ -83,7 +83,10 @@
           {% endfor %}
         </ul>
       </div>
-      <a href="#" class="md:mr-4 hidden md:!block">
+      <a href="#" class="md:mr-4 self-start hidden min-[500px]:!block">
+        {%- render 'search-icon' -%}
+      </a>
+      <a href="#" class="md:mr-4 self-start hidden min-[500px]:!block">
         {% render 'user-icon' %}
       </a>
       <a
@@ -112,6 +115,7 @@
   }
   .burger-tablet {
     display: none;
+    transform: rotateZ(180deg);
   }
   .social-icons-container {
     display: none;
