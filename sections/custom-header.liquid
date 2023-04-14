@@ -41,7 +41,7 @@
             <li class="group md:flex md:items-center">
               <a
                 href="{{ link.url }}"
-                class="text-[#f8f8f8] {% if link.current %}underline{% endif %} font-montserrat {% if link.links.size > 0 %}gap-2 flex md:gap-6 items-center accordion{% endif %} text-base font-medium"
+                class="text-black {% if link.current %}underline{% endif %} font-montserrat {% if link.links.size > 0 %}gap-2 flex md:gap-6 items-center accordion{% endif %} text-base font-medium"
                 {% if link.current %}
                   aria-current="page"
                 {% endif %}
